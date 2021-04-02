@@ -1,0 +1,14 @@
+@import "./styles/index.scss";
+.pages {
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+}

@@ -1,0 +1,93 @@
+page {
+    /* prettier-ignore */
+    --height: 44px;
+    /* prettier-ignore */
+    --right: 190rpx;
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5001;
+    right: 0;
+    overflow: hidden;
+    background: rgba($color: #000000, $alpha: 0.75);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: #fff;
+    transition: all 500ms;
+    &__center {
+        font-weight: bold;
+    }
+}
+
+.navigation-bar__placeholder {
+    // visibility: hidden;
+}
+
+.navigation-bar .android {
+    /* prettier-ignore */
+    --height: 48px;
+    /* prettier-ignore */
+    --right: 222rpx;
+}
+
+.navigation-bar .ios {
+    /* prettier-ignore */
+    --height: 44px;
+    /* prettier-ignore */
+    --right: 190rpx;
+}
+
+.navigation-bar__inner {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: 5001;
+    /* prettier-ignore */
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    /* prettier-ignore */
+    padding-right: var(--right);
+    /* prettier-ignore */
+    width: calc(100% - var(--right));
+}
+
+.navigation-bar__inner .navigation-bar__left {
+    position: relative;
+    /* prettier-ignore */
+    width: var(--right);
+    padding-left: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+}
+
+.navigation-bar__inner .navigation-bar__left .navigation-bar__btn {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.navigation-bar__left .navigation-bar__buttons {
+    font-size: 40rpx;
+    border-radius: 50%;
+}
+
+.navigation-bar__inner .navigation-bar__center {
+    /* prettier-ignore */
+    font-size: 34rpx;
+    text-align: center;
+    position: relative;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
